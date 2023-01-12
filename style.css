@@ -1,3 +1,95 @@
+:root{
+    --btn-color:#FF5959;
+    --white-color:#FFFFFF;
+}
 *{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+body{
     background-color: antiquewhite;
+}
+
+
+/* header section style */
+header{
+    border: 1px solid;
+    /* padding: 130px 300px; */
+}
+
+.btn-primary{
+    width: 160px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0em;
+    border-radius: 5px;
+    color: var(--white-color);
+    background: var(--btn-color);
+}
+/* use liner gradient */
+.banner{
+    /* border: 1px solid greenyellow; */
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 18, 18, 1)), url(/images/donation5.jpg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    object-fit: fill;
+    object-position: center;
+    /* width: 100%; */
+    }
+.banner > h1, p {
+    margin: 0;
+    /* padding: 0; */
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner > p{
+    margin-bottom: 10px;
+}
+.banner>h1{
+    font-weight: 700;
+    font-size: 65px;
+}
+
+/* small screen */
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .banner{
+        display: flex;
+        flex:content;
+        background-image: none;
+        background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 18, 18, 1)) ;
+    }
+}
+
+/* x-small device */
+@media only screen and (max-width: 575px) {
+    .banner{
+        display: flex;
+        flex-direction:column;
+        /* flex-wrap:wrap ; */
+        background-image: none;
+        background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 18, 18, 1)) ;
+    }
+    .banner > h1, p{
+        font-size: small;
+        font-weight: 100;
+    }
+    .btn-primary{
+        width: 50px;
+        height: 20px;
+        font-weight: .25em;
+        font-size: small;
+        border: 0em;
+        border-radius: 5px;
+        color: var(--white-color);
+        background: var(--btn-color);
+    }
 }
