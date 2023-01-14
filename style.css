@@ -1,14 +1,23 @@
+/* primary section */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*...............
+ primary color
+ ............. */
 :root{
     --btn-color:#FF5959;
     --white-color:#FFFFFF;
+    --primary-color:#707070;
+    --primary-white:#FAFAFA;
 }
+
 *{
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     box-sizing: content-box;
 }
 body{
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
 }
 
 
@@ -93,3 +102,51 @@ header{
         background: var(--btn-color);
     }
 }
+
+/* main section style */
+main{
+    border: 1px solid;
+}
+
+/* sectin-1 style */
+.section-1{
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    /* padding: 130px 500px; */
+    /* border: 1px solid; */
+}
+
+.section-1 >h3{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section-1  p{
+    
+    color: var(--primary-color)
+}
+.taka{
+    
+    height: 30vh;
+    /* background-color: #707070; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.box{
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-white);
+}
+.section-1
